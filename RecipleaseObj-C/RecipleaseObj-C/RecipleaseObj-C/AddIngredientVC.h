@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AddIngredientVC : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *ingredientTxtField;
 @property (weak, nonatomic) IBOutlet UITableView *ingredientTableView;
 @property (weak, nonatomic) IBOutlet UIButton *searchBtn;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UIButton *addIngredientBtn;
+@property (weak, nonatomic) IBOutlet UIButton *clearIngredientBtn;
 
 @end
 

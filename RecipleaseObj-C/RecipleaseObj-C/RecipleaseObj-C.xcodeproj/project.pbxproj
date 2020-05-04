@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E84D39F245B1DE60076C8E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84D39E245B1DE60076C8E4 /* AppDelegate.m */; };
 		1E84D3A2245B1DE60076C8E4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84D3A1245B1DE60076C8E4 /* SceneDelegate.m */; };
-		1E84D3A5245B1DE60076C8E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84D3A4245B1DE60076C8E4 /* ViewController.m */; };
+		1E84D3A5245B1DE60076C8E4 /* AddIngredientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84D3A4245B1DE60076C8E4 /* AddIngredientVC.m */; };
 		1E84D3A8245B1DE60076C8E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E84D3A6245B1DE60076C8E4 /* Main.storyboard */; };
 		1E84D3AB245B1DE60076C8E4 /* RecipleaseObj_C.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E84D3A9245B1DE60076C8E4 /* RecipleaseObj_C.xcdatamodeld */; };
 		1E84D3AD245B1DE90076C8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E84D3AC245B1DE90076C8E4 /* Assets.xcassets */; };
@@ -23,8 +23,8 @@
 		1E84D39E245B1DE60076C8E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1E84D3A0245B1DE60076C8E4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1E84D3A1245B1DE60076C8E4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1E84D3A3245B1DE60076C8E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1E84D3A4245B1DE60076C8E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1E84D3A3245B1DE60076C8E4 /* AddIngredientVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddIngredientVC.h; sourceTree = "<group>"; };
+		1E84D3A4245B1DE60076C8E4 /* AddIngredientVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddIngredientVC.m; sourceTree = "<group>"; };
 		1E84D3A7245B1DE60076C8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E84D3AA245B1DE60076C8E4 /* RecipleaseObj_C.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipleaseObj_C.xcdatamodel; sourceTree = "<group>"; };
 		1E84D3AC245B1DE90076C8E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 				1E84D39E245B1DE60076C8E4 /* AppDelegate.m */,
 				1E84D3A0245B1DE60076C8E4 /* SceneDelegate.h */,
 				1E84D3A1245B1DE60076C8E4 /* SceneDelegate.m */,
-				1E84D3A3245B1DE60076C8E4 /* ViewController.h */,
-				1E84D3A4245B1DE60076C8E4 /* ViewController.m */,
+				1E84D3A3245B1DE60076C8E4 /* AddIngredientVC.h */,
+				1E84D3A4245B1DE60076C8E4 /* AddIngredientVC.m */,
 				1E84D3A6245B1DE60076C8E4 /* Main.storyboard */,
 				1E84D3AC245B1DE90076C8E4 /* Assets.xcassets */,
 				1E84D3AE245B1DE90076C8E4 /* LaunchScreen.storyboard */,
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E84D3B3245B1DE90076C8E4 /* main.m in Sources */,
-				1E84D3A5245B1DE60076C8E4 /* ViewController.m in Sources */,
+				1E84D3A5245B1DE60076C8E4 /* AddIngredientVC.m in Sources */,
 				1E84D39F245B1DE60076C8E4 /* AppDelegate.m in Sources */,
 				1E84D3AB245B1DE60076C8E4 /* RecipleaseObj_C.xcdatamodeld in Sources */,
 				1E84D3A2245B1DE60076C8E4 /* SceneDelegate.m in Sources */,

@@ -27,7 +27,7 @@
         <!--Reciplease-->
         <scene sceneID="r7N-KM-7gO">
             <objects>
-                <viewController id="uwt-iv-Yvf" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="uwt-iv-Yvf" customClass="AddIngredientVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKK-Vf-cyh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,19 +42,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6LQ-Y9-zug">
-                                        <rect key="frame" x="5" y="56.5" width="404" height="34"/>
+                                        <rect key="frame" x="5" y="56.5" width="404" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lemon, Cheese, Sausages..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBq-sY-h8N">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lemon, Cheese, Sausages..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBq-sY-h8N">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="340" id="dtb-jn-u1k"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-QA-eUd">
-                                                <rect key="frame" x="348" y="0.0" width="56" height="34"/>
-                                                <color key="backgroundColor" red="0.13608706000000001" green="0.43606257440000001" blue="0.98044294119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="348" y="0.0" width="56" height="30"/>
+                                                <color key="backgroundColor" red="0.34930628540000003" green="0.57136023039999995" blue="0.38428556920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -77,18 +78,19 @@
                                     <constraint firstAttribute="trailing" secondItem="6LQ-Y9-zug" secondAttribute="trailing" constant="5" id="upb-DH-zXl"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="236" translatesAutoresizingMaskIntoConstraints="NO" id="F0q-Gb-9VG">
-                                <rect key="frame" x="5" y="218" width="404" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="230" translatesAutoresizingMaskIntoConstraints="NO" id="F0q-Gb-9VG">
+                                <rect key="frame" x="5" y="218" width="404" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Your ingredients : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evi-W6-9FZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="132" height="30"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="32"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsx-6e-E4x">
-                                        <rect key="frame" x="368" y="0.0" width="36" height="30"/>
-                                        <color key="backgroundColor" red="0.13608706000000001" green="0.43606257440000001" blue="0.98044294119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="366" y="0.0" width="38" height="32"/>
+                                        <color key="backgroundColor" red="0.34930628540000003" green="0.57136023039999995" blue="0.38428556920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Clear">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -98,17 +100,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="own-Nt-nzG">
-                                <rect key="frame" x="0.0" y="253" width="414" height="485"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="own-Nt-nzG">
+                                <rect key="frame" x="0.0" y="255" width="414" height="483"/>
+                                <color key="backgroundColor" red="0.21165716649999999" green="0.20007786150000001" blue="0.19607779380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" id="s3y-qP-cUC">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s3y-qP-cUC" id="bca-wZ-DP5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.21165716649999999" green="0.20007786150000001" blue="0.19607779380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -118,10 +121,10 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGt-p1-OKN">
                                 <rect key="frame" x="20" y="753" width="374" height="45"/>
-                                <color key="backgroundColor" red="0.13608706000000001" green="0.43606257440000001" blue="0.98044294119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.34930628540000003" green="0.57136023039999995" blue="0.38428556920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
                                 <state key="normal" title="Search for recipes">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="searchRecipePressed:" destination="uwt-iv-Yvf" eventType="touchUpInside" id="clW-hf-Imc"/>
@@ -129,9 +132,10 @@
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EWm-VJ-5X1">
                                 <rect key="frame" x="197" y="765.5" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26755630969999999" green="0.58346647019999998" blue="0.36467176680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.21165716649999999" green="0.20007786150000001" blue="0.19607779380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qvV-cA-J3F" firstAttribute="bottom" secondItem="EGt-p1-OKN" secondAttribute="bottom" constant="15" id="1HP-fy-Pla"/>
                             <constraint firstItem="qvV-cA-J3F" firstAttribute="bottom" secondItem="own-Nt-nzG" secondAttribute="bottom" constant="75" id="3M7-wu-SLm"/>
@@ -156,6 +160,8 @@
                     <navigationItem key="navigationItem" title="Reciplease" id="Iat-L1-EQd"/>
                     <connections>
                         <outlet property="activityIndicator" destination="EWm-VJ-5X1" id="DtV-aC-48Z"/>
+                        <outlet property="addIngredientBtn" destination="p6E-QA-eUd" id="Q9w-zz-1TC"/>
+                        <outlet property="clearIngredientBtn" destination="Lsx-6e-E4x" id="Gpn-0f-y7W"/>
                         <outlet property="ingredientTableView" destination="own-Nt-nzG" id="CDH-bk-qWW"/>
                         <outlet property="ingredientTxtField" destination="vBq-sY-h8N" id="k66-s0-OFm"/>
                         <outlet property="searchBtn" destination="EGt-p1-OKN" id="Qk6-mH-6vA"/>
