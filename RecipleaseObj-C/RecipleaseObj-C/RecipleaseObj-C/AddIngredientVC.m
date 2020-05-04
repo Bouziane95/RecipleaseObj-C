@@ -37,10 +37,19 @@ const NSString *newIngredient;
 }
 
 - (IBAction)addIngredientPressed:(UIButton *)sender {
-    [self addNewIngredient];
-    [self.tableData addObject: newIngredient];
-    _ingredientTxtField.text = @"";
-    [self.ingredientTableView reloadData];
+    
+    if ([self.ingredientTxtField.text  isEqual: @""]){
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"No ingredients !" message:@"Add an ingredient in the text field next to the button" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Ok, Thanks" style:UIAlertActionStyleDefault handler: ^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+        [self addNewIngredient];
+        [self.tableData addObject: newIngredient];
+        _ingredientTxtField.text = @"";
+        [self.ingredientTableView reloadData];
+    }
 }
 
 - (void)clearIngredient{
@@ -55,6 +64,18 @@ const NSString *newIngredient;
 - (IBAction)searchRecipePressed:(UIButton *)sender {
     self.activityIndicator.hidden = false;
     self.searchBtn.hidden = true;
+    if ([self.tableData count] == 0){
+        self.searchBtn.hidden = false;
+        self.activityIndicator.hidden = true;
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"No ingredients !" message:@"Add some ingredients with the button add !" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler: ^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    } else {
+        NSLog(@"Appel réseau ici");
+    }
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
